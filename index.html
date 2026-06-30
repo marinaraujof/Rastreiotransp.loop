@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Central de Liberação de Frota</title>
 
 <style>
-body{
+*{
     margin:0;
-    height:100vh;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f6fa;
+    min-height:100vh;
     display:flex;
-    align-items:center;
     justify-content:center;
-    background:#f3f4f6;
-    font-family:Arial,sans-serif;
+    align-items:center;
 }
 
 .card{
     width:90%;
-    max-width:420px;
+    max-width:650px;
     background:white;
-    padding:35px;
     border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
     text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
-.titulo{
-    font-size:30px;
+.logo{
+    font-size:28px;
     font-weight:bold;
-    color:#1f2937;
-    margin-bottom:15px;
+    color:#0057b8;
+    margin-bottom:25px;
 }
 
 .check{
-    font-size:65px;
+    font-size:70px;
     margin:10px;
 }
 
 .status{
-    font-size:26px;
+    font-size:34px;
     font-weight:bold;
     color:#16a34a;
+    margin-bottom:15px;
 }
 
 .mensagem{
     color:#6b7280;
     font-size:18px;
-    margin:20px 0;
+    margin-bottom:30px;
 }
 
-/* BARRA */
+/* Barra de progresso */
 .barra{
     width:100%;
     height:14px;
     background:#e5e7eb;
     border-radius:20px;
     overflow:hidden;
-    margin:20px 0;
+    margin-bottom:30px;
 }
 
 .progresso{
@@ -73,37 +82,40 @@ body{
 }
 
 </style>
+
 </head>
 
 <body>
 
 <div class="card">
 
-<div class="titulo">
-RASTREAMENTO LOOP
-</div>
+    <div class="logo">
+        RASTREAMENTO LOOP
+    </div>
 
-<div class="check">
-☑️
-</div>
+    <div class="check">
+        ☑️
+    </div>
 
-<div class="status">
-Liberação concluída
-</div>
+    <div class="status">
+        Liberação concluída
+    </div>
 
-<div class="mensagem">
-Processo em andamento para entrega.
-</div>
+    <div class="mensagem">
+        Processo finalizado com sucesso.
+    </div>
 
-<div class="barra">
-    <div class="progresso"></div>
-</div>
 
-<div class="info">
-<b>STATUS:</b> Liberado<br>
-<b>ETAPA:</b> Rota de Entrega<br>
-<b>PREVISÃO:</b> 03/07/2026
-</div>
+    <div class="barra">
+        <div class="progresso"></div>
+    </div>
+
+
+    <div class="info">
+        <b>STATUS:</b> Liberado<br>
+        <b>ETAPA:</b> Rota de Entrega<br>
+        <b>PREVISÃO:</b> 03/07/2026
+    </div>
 
 </div>
 
