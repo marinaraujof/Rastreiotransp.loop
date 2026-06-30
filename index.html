@@ -1,36 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Central de Liberação de Frota</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
 body{
     background:#f4f6fa;
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    font-family:Arial,sans-serif;
 }
 
 .card{
     width:90%;
     max-width:650px;
     background:white;
-    border-radius:25px;
-    padding:45px;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
     text-align:center;
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
 .logo{
-    font-size:32px;
+    font-size:28px;
     font-weight:bold;
     color:#0057b8;
     margin-bottom:25px;
 }
 
 .check{
-    font-size:90px;
-    margin:15px;
+    font-size:70px;
+    margin:10px;
 }
 
 .status{
-    font-size:36px;
+    font-size:34px;
     font-weight:bold;
     color:#16a34a;
     margin-bottom:15px;
@@ -38,36 +53,32 @@ body{
 
 .mensagem{
     color:#6b7280;
-    font-size:20px;
+    font-size:18px;
     margin-bottom:30px;
 }
 
-
+/* Barra de progresso */
 .barra{
     width:100%;
-    height:18px;
+    height:14px;
     background:#e5e7eb;
-    border-radius:30px;
+    border-radius:20px;
     overflow:hidden;
-    margin:25px 0;
+    margin-bottom:30px;
 }
 
 .progresso{
     width:20%;
     height:100%;
     background:#0057b8;
-    border-radius:30px;
+    border-radius:20px;
 }
 
-
 .info{
-    margin-top:30px;
     text-align:left;
-    font-size:20px;
-    line-height:2;
-    color:#374151;
-    border-top:1px solid #ddd;
-    padding-top:20px;
+    color:#555;
+    line-height:1.8;
+    font-size:17px;
 }
 
 </style>
