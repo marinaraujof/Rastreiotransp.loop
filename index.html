@@ -1,95 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Central de Liberação de Frota</title>
 
 <style>
-*{
-    }
-keyframes Check{
-    100%{
-        transform:rotate(360deg);
-    }
-    }
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
-}
-
 body{
-    background:#f4f6fa;
-    min-height:100vh;
+    margin:0;
+    height:100vh;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+    background:#f3f4f6;
+    font-family:Arial,sans-serif;
 }
 
 .card{
     width:90%;
-    max-width:650px;
+    max-width:420px;
     background:white;
+    padding:35px;
     border-radius:20px;
-    padding:40px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
     text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#0057b8;
-    margin-bottom:8px;
-}
-
-.subtitulo{
-    color:#666;
-    margin-bottom:30px;
-}
-
-.loader{
-    width:90px;
-    height:90px;
-    border:8px solid #e0e0e0;
-    border-top:8px solid #0057b8;
-    border-radius:50%;
-    margin:0 auto 25px;
-    animation:girar 1s linear infinite;
-
-.status{
-    font-size:36px;
+.titulo{
+    font-size:30px;
     font-weight:bold;
     color:#1f2937;
     margin-bottom:15px;
 }
 
+.check{
+    font-size:65px;
+    margin:10px;
+}
+
+.status{
+    font-size:26px;
+    font-weight:bold;
+    color:#16a34a;
+}
+
 .mensagem{
     color:#6b7280;
     font-size:18px;
-    margin-bottom:30px;
+    margin:20px 0;
 }
 
+/* BARRA */
 .barra{
     width:100%;
     height:14px;
     background:#e5e7eb;
     border-radius:20px;
     overflow:hidden;
+    margin:20px 0;
 }
 
 .progresso{
-    width:10%;
+    width:20%;
     height:100%;
     background:#0057b8;
+    border-radius:20px;
 }
 
 .info{
-    margin-top:25px;
+    text-align:left;
     color:#555;
     line-height:1.8;
+    font-size:17px;
 }
+
 </style>
 </head>
 
@@ -97,27 +79,30 @@ body{
 
 <div class="card">
 
-<div class="logo"> RASTREAMENTO LOOP</div>
-<div class="subtitulo">Central de Monitoramento Logístico</div>
+<div class="titulo">
+RASTREAMENTO LOOP
+</div>
 
-<div class="Check">☑️</div>
+<div class="check">
+☑️
+</div>
 
 <div class="status">
- LIBERAÇÃO CONCLUÍDA
+Liberação concluída
 </div>
 
 <div class="mensagem">
-Seu veículo encontra-se em rota.
+Processo em andamento para entrega.
 </div>
 
 <div class="barra">
-<div class="progresso"></div>
+    <div class="progresso"></div>
 </div>
 
 <div class="info">
-<b>Status Atual:</b> Liberado<br>
-<b>Etapa:</b> Veículo em Rota<br>
-<b>Previsão:</b> 03/07/2026
+<b>STATUS:</b> Liberado<br>
+<b>ETAPA:</b> Rota de Entrega<br>
+<b>PREVISÃO:</b> 03/07/2026
 </div>
 
 </div>
