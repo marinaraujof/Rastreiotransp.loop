@@ -52,10 +52,11 @@ body{
     margin:0 auto 25px;
     animation:girar 1s linear infinite;
 }
-<div class="check">
-    ✓
-</div>
-
+keyframes Check{
+    100%{
+        transform:rotate(360deg);
+    }
+}
 .status{
     font-size:36px;
     font-weight:bold;
@@ -78,7 +79,7 @@ body{
 }
 
 .progresso{
-    width:100%;
+    width:10%;
     height:100%;
     background:#0057b8;
 }
